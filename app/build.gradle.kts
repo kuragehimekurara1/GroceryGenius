@@ -15,7 +15,7 @@ android {
         applicationId = "com.rendox.grocerygenius"
         minSdk = 21
         targetSdk = 34
-        versionCode = 2
+        versionCode = 5
         versionName = "0.1.2"
 
         testInstrumentationRunner = "com.rendox.grocerygenius.testing.GroceryGeniusTestRunner"
