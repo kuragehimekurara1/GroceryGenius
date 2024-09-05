@@ -77,8 +77,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextMotion
@@ -88,6 +86,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.times
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.compose.dropUnlessResumed
 import com.rendox.grocerygenius.R
 import com.rendox.grocerygenius.feature.add_grocery.AddGroceryBottomSheetContent
 import com.rendox.grocerygenius.feature.add_grocery.AddGroceryBottomSheetState
@@ -143,8 +142,11 @@ fun GroceryListRoute(
     ObserveUiEvent(closeGroceryListScreenEvent) {
         navigateBack()
     }
-    ObserveUiEvent(navigateToCategoryScreenEvent) {
+    val navigateToCategoryScreenSafely = dropUnlessResumed {
         navigateToCategoryScreen()
+    }
+    ObserveUiEvent(navigateToCategoryScreenEvent) {
+        navigateToCategoryScreenSafely()
     }
 
     val addBottomSheetState = rememberStandardBottomSheetState()
