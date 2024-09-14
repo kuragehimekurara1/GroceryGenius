@@ -93,9 +93,11 @@ class GroceryListViewModel @AssistedInject constructor(
     val openedCategoryGroceriesFlow = _openedCategoryGroceriesFlow.asStateFlow()
 
     private val groceriesInList = groceryRepository.getGroceriesFromList(openedGroceryListId)
-    private val categoryProductsFlow = openedCategoryIdFlow.flatMapLatest { categoryId ->
-        productRepository.getProductsByCategory(categoryId)
-    }
+    private val categoryProductsFlow = openedCategoryIdFlow
+        .flatMapLatest { categoryId ->
+            productRepository.getProductsByCategory(categoryId)
+        }
+        .map { it.sortedBy { product -> product.name } }
 
     private val _navigateToCategoryScreenEvent = MutableStateFlow<UiEvent<Unit>?>(null)
     val navigateToCategoryScreenEvent = _navigateToCategoryScreenEvent.asStateFlow()
@@ -171,6 +173,7 @@ class GroceryListViewModel @AssistedInject constructor(
                                 }
                             }
                         }
+
                         else -> {}
                     }
                 }
