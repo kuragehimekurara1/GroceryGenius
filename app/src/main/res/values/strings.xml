@@ -47,7 +47,7 @@
     <string name="settings_reorder_categories_description">Grocery Genius sorts items by their categories. You can arrange them to match your favorite store.</string>
     <string name="settings_dynamic_color_not_supported_message">Your device does not support dynamic color</string>
     <string name="settings_feedback">Feedback</string>
-    <string name="github_link_title">GitHub translatable="false</string>
+    <string name="github_link_title" translatable="false">GitHub</string>
     <string name="github_link_description">View the source code, contribute, report bugs, and request features.</string>
     <string name="email_link_title">Email Developer</string>
     <string name="email_link_description">Reach out to the developer for friendly feedback, suggestions, or any other input you have in mind.</string>
