@@ -26,7 +26,7 @@
         <item quantity="one">%d ürün</item>
         <item quantity="other">%d ürün</item>
     </plurals>
-    <string name="add_grocery_list_button_description">Create new grocery list</string>
+    <string name="add_grocery_list_button_description">Yeni alışveriş listesi oluştur</string>
     <!-- SettingsScreen -->
     <string name="settings_dark_theme_config_system_default">Sistem</string>
     <string name="settings_dark_theme_config_light">Açık</string>
@@ -37,12 +37,12 @@
     <string name="settings_preferences">Tercihler</string>
     <string name="settings_open_last_viewed_list">Son Görülen Listeyi Aç</string>
     <string name="settings_default_list">Varsayılan Listeyi Aç</string>
-    <string name="settings_default_list_unspecified">Unspecified</string>
+    <string name="settings_default_list_unspecified">Tanımsız</string>
     <string name="settings_reorder_categories_title">Kategorileri Yeniden Düzenle</string>
     <string name="settings_reorder_categories_description">Grocery Genius, ürünleri kategorilerine göre sıralar. Bunları favori mağazanıza göre ayarlayabilirsiniz.</string>
     <string name="settings_dynamic_color_not_supported_message">Cihazınız dinamik rengi desteklemiyor</string>
     <string name="settings_feedback">Geri Bildirim</string>
-    <string name="github_link_description">View the source code, contribute, report bugs, and suggest features.</string>
+    <string name="github_link_description">Kaynak kodu görüntüleyin, katkıda bulunun, hataları bildirin ve özellik önerin.</string>
     <string name="email_link_title">Geliştiriciye E-posta Gönder</string>
     <string name="email_link_description">Geliştiriciyle dostça geri bildirim, öneriler veya aklınızdaki herhangi bir şey için iletişime geçin.</string>
     <string name="settings_credits">Katkıda Bulunanlar</string>
@@ -70,10 +70,10 @@
     <string name="retry">Tekrar Dene</string>
     <!-- Components -->
     <string name="custom_category_title">Özel</string>
-    <string name="toggle_dropdown_menu_visibility">Show/hide dropdown menu\n</string>
+    <string name="toggle_dropdown_menu_visibility">Açılır menüyü göster/gizle</string>
     <string name="drag_handle">Sürükleme tutamacı</string>
     <!-- Notifications -->
-    <string name="sync_work_notification_channel_name">Synchronization</string>
-    <string name="sync_work_notification_channel_description"> Periodic synchronization of grocery database.</string>
+    <string name="sync_work_notification_channel_name">Senkronizasyon</string>
+    <string name="sync_work_notification_channel_description">Market veritabanının periyodik senkronizasyonu.</string>
     <string name="sync_work_notification_title">Ürünleriniz senkronize ediliyor</string>
 </resources>
