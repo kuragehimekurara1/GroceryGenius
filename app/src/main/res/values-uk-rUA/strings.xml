@@ -71,7 +71,7 @@
     <string name="reset">Скинути</string>
     <string name="retry">Повторити спробу</string>
     <!-- Components -->
-    <string name="custom_category_title">Custom</string>
+    <string name="custom_category_title">Власні</string>
     <string name="toggle_dropdown_menu_visibility">Toggle dropdown menu visibility\n</string>
     <string name="drag_handle">Елемент для перетягування</string>
     <!-- Notifications -->
